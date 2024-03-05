@@ -5,14 +5,15 @@ from sodapy import Socrata
 # Asegúrate de instalar estos paquetes antes de ejecutar :
 # pip install pandas
 # pip install sodapy
+# pip install matplotlib
 
 # Clave de API
 app_token = "NKCHi3LOO1xctFBVZHnC9RAvp"
 
 user = "jhon.zuniga@utp.edu.co"
-clave = "Buenas2016"
+clave = "Buenas2016@"
 # Autenticación con la clave de API y el secreto
-client = Socrata("https://www.datos.gov.co/resource/ch4u-f3i5.json", app_token, user, clave)
+client = Socrata("www.datos.gov.co", app_token, user, clave)
 
 # ID del conjunto de datos que deseas acceder
 dataset_id = "ch4u-f3i5"
